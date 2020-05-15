@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+    margin: 0;
+}
+
+#SideBar {
+    position: fixed;
+    height: 100%;
+    background-color: rgb(15, 15, 15);
+    color: whitesmoke;
+    width: 150px;
+    margin: 0;
+    top: 0;
+    padding: 10px;
+    /* transform: translateX(-150px); */
+}
+
+#SideBar.active {
+    transform: translateX(0px);
+}
+
+#SideBar span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+    transform: translateX(160px);
+}
+
+#SideBar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#SideBar li {
+    list-style-type: none;
+    margin: 15px auto;
+    border-bottom: 2px solid rgb(29, 1, 1);
+    padding: 5px;
+}
