@@ -22,10 +22,9 @@ body {
     transform: translateX(0);
 }
 
+
 .SideBar .toggler {
     padding: 10px;
-    background-color: blue;
-    width: 100%;
 }
 
 .SideBar span {
