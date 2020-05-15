@@ -3,7 +3,6 @@
 }
 
 body {
-    background-color: red;
     margin: 0;
 }
 
@@ -16,21 +15,24 @@ body {
     margin: 0;
     top: 0;
     transform: translateX(-150px);
+    transition: 0.5s;
 }
 
 .active {
-    transform: translateX(150px);
+    transform: translateX(0);
 }
 
 .SideBar .toggler {
     padding: 10px;
+    background-color: blue;
+    width: 100%;
 }
 
 .SideBar span {
     display: block;
     width: 30px;
     height: 5px;
-    background-color: white;
+    background-color: rgb(141, 8, 8);
     margin: 5px 0;
     transform: translateX(160px);
 }
