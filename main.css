@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-#SideBar {
+.SideBar {
     position: fixed;
     height: 100%;
     background-color: rgb(15, 15, 15);
@@ -15,15 +15,18 @@ body {
     width: 150px;
     margin: 0;
     top: 0;
+    transform: translateX(-150px);
+}
+
+.active {
+    transform: translateX(150px);
+}
+
+.SideBar .toggler {
     padding: 10px;
-    /* transform: translateX(-150px); */
 }
 
-#SideBar.active {
-    transform: translateX(0px);
-}
-
-#SideBar span {
+.SideBar span {
     display: block;
     width: 30px;
     height: 5px;
@@ -32,12 +35,12 @@ body {
     transform: translateX(160px);
 }
 
-#SideBar ul {
+.SideBar ul {
     margin: 0;
     padding: 0;
 }
 
-#SideBar li {
+.SideBar li {
     list-style-type: none;
     margin: 15px auto;
     border-bottom: 2px solid rgb(29, 1, 1);
